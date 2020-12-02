@@ -1,0 +1,119 @@
+.post {
+  width: 100%;
+  background: white;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.post__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.post__top h3 {
+  font-size: 16px;
+}
+
+.post__top p {
+  font-size: 12px;
+  color: gray;
+}
+
+.post__topInfo {
+  margin-left: 5px;
+}
+
+.post__message {
+  padding: 0 15px;
+  overflow-wrap: break-word;
+}
+
+.post__topLeft {
+  display: flex;
+}
+
+.post__pic {
+  width: 100%;
+  border-top: 1px solid rgb(240, 240, 240);
+  margin-top: 10px;
+}
+
+.post__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: gray;
+  padding: 5px 0;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.post__icon {
+  display: flex;
+  padding: 0 10px;
+}
+
+.post__icon:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.post__icon p {
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.post__comment {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.post__comment input {
+  margin-left: 5px;
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  background: rgb(242, 242, 242);
+}
+
+.post__comment button {
+  display: none;
+}
+
+.post .post__commentPic,
+.post .comment__pic {
+  height: 30px;
+  width: 30px;
+}
+
+.post__comments {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.comment__info {
+  flex: 1;
+  background: rgb(242, 242, 242);
+  margin-left: 5px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  max-width: fit-content;
+  width: 300px;
+  overflow-wrap: break-word;
+}
+
+.comment__info h5 {
+  font-size: 12px;
+}

@@ -1,0 +1,32 @@
+.sidebar {
+  padding: 15px;
+  flex: 0.22;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  margin: 6px 0px;
+  padding: 5px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sidebarOption:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.sidebarOption p {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.sidebarOption .MuiAvatar-circle {
+  height: 30px;
+  width: 30px;
+}
+
+.sidebarOption .MuiSvgIcon-root {
+  font-size: 30px;
+  color: rgb(61, 119, 235);
+}

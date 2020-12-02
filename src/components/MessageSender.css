@@ -1,0 +1,68 @@
+.messageSender {
+  background: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.messageSender__top {
+  display: flex;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.messageSender__top button {
+  display: none;
+}
+
+.messageSender__topInput1 {
+  flex: 1;
+  border-radius: 999px;
+  border: none;
+  background: rgb(242, 242, 242);
+  font-size: 16px;
+  padding: 0 10px;
+  outline: 0;
+  max-width: 300px;
+}
+
+.messageSender__topInput2 {
+  border-radius: 999px;
+  border: none;
+  background: rgb(242, 242, 242);
+  padding: 0 10px;
+  outline: 0;
+  margin-left: 5px;
+  width: 150px;
+}
+
+.messageSender__pic {
+  margin-right: 10px;
+}
+
+.messageSender__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  color: gray;
+}
+
+.messageSender__bottomOption {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.messageSender__bottomOption:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.messageSender__bottomOption p {
+  padding-left: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.messageSender__bottom .MuiSvgIcon-root {
+  font-size: 30px;
+}

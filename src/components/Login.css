@@ -1,0 +1,26 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 500px;
+  height: 100%;
+}
+
+.login img {
+  height: 200px;
+  margin-bottom: 100px;
+}
+
+.login button {
+  background: rgb(19, 94, 255) !important;
+  color: white;
+  width: 200px;
+  padding: 10px;
+}
+
+.login button:hover {
+  background: white !important;
+  color: rgb(19, 94, 255);
+}
