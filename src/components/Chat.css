@@ -1,16 +1,17 @@
 .chat {
   flex: 0.53;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-height: 91vh;
+  min-height: 595px;
+}
+
+.chat::-webkit-scrollbar {
+  display: none;
 }
 
 .chat__inner {
   width: 500px;
   margin: 0 auto;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  max-height: 600px;
-}
-
-.chat__inner::-webkit-scrollbar {
-  display: none;
 }

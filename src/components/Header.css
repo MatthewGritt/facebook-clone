@@ -5,6 +5,7 @@
   background: white;
   padding: 8px 15px;
   min-width: 1000px;
+  min-height: 8vh;
 }
 
 .header__left {
