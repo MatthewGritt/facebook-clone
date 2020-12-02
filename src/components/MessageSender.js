@@ -16,15 +16,17 @@ function MessageSender() {
   const setPost = (e) => {
     e.preventDefault();
 
-    db.collection("posts").add({
-      message: text,
-      image: imageUrl,
-      username: user.displayName,
-      profilePic: user.photoURL,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
+    if (text.length > 0) {
+      db.collection("posts").add({
+        message: text,
+        image: imageUrl,
+        username: user.displayName,
+        profilePic: user.photoURL,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+      setImageUrl("");
+    }
     setText("");
-    setImageUrl("");
   };
 
   return (

@@ -29,12 +29,15 @@ function Post({ id, name, timestamp, message, pic, image }) {
     e.preventDefault();
     console.log("yo");
 
-    db.collection("posts").doc(id).collection("comments").add({
-      message: text,
-      name: user.displayName,
-      profilePic: user.photoURL,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    });
+    if (text.length > 0) {
+      db.collection("posts").doc(id).collection("comments").add({
+        message: text,
+        name: user.displayName,
+        profilePic: user.photoURL,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      });
+    }
+
     setText("");
   };
   console.log(comments);
