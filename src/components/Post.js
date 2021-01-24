@@ -27,7 +27,6 @@ function Post({ id, name, timestamp, message, pic, image }) {
 
   const setReply = (e) => {
     e.preventDefault();
-    console.log("yo");
 
     if (text.length > 0) {
       db.collection("posts").doc(id).collection("comments").add({
@@ -40,7 +39,6 @@ function Post({ id, name, timestamp, message, pic, image }) {
 
     setText("");
   };
-  console.log(comments);
   return (
     <div className="post">
       <div className="post__top">
